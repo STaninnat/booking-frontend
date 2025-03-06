@@ -1,0 +1,137 @@
+footer {
+  background-color: hsl(191, 32%, 90%);
+  padding: var(--20px) var(--14px) 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+li,
+i {
+  list-style: none;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(240, 6%, 10%);
+  transition: color 0.3s ease;
+  background-color: transparent;
+}
+
+footer .top,
+footer .middle,
+footer .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+footer .logo,
+footer .top ul,
+footer .top .social-links,
+footer .footer-contact {
+  background-color: transparent;
+}
+
+footer .logo img {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: var(--52px);
+  background-color: transparent;
+}
+
+footer .top ul {
+  display: flex;
+  justify-content: center;
+  font-size: var(--12px);
+  gap: var(--80px);
+}
+
+footer .top .social-links {
+  display: flex;
+  align-items: center;
+  gap: var(--10px);
+  font-size: var(--16px);
+}
+
+footer .separator {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin: var(--10px) 0 var(--10px);
+}
+
+footer .footer-contact p {
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  gap: var(--6px);
+}
+
+footer .footer-contact p:last-child {
+  margin-bottom: 0;
+}
+
+footer .middle {
+  margin-bottom: var(--4px);
+}
+
+footer .middle p {
+  font-size: var(--10px);
+  color: black;
+  background-color: transparent;
+}
+
+footer .links {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  margin-bottom: auto;
+}
+
+footer .middle .links a {
+  font-size: var(--10px);
+  margin-left: var(--10px);
+}
+
+footer .bottom p {
+  font-size: var(--10px);
+  color: black;
+  background-color: transparent;
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+}
+
+@media (min-width: 50em) and (max-width: 62.5em) {
+  footer {
+    padding: var(--6px) var(--20px);
+  }
+
+  footer .top ul {
+    font-size: var(--10px);
+    gap: var(--72px);
+  }
+
+  footer .logo img {
+    height: var(--48px);
+  }
+
+  footer .middle p {
+    font-size: var(--8px);
+  }
+
+  footer .middle .links a {
+    font-size: var(--8px);
+    margin-left: var(--10px);
+  }
+
+  footer .bottom p {
+    font-size: var(--8px);
+  }
+}

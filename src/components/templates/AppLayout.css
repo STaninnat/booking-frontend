@@ -1,0 +1,17 @@
+.layout-app-section {
+  margin-top: 0;
+  padding: var(--28px) var(--100px);
+  user-select: text;
+  caret-color: transparent;
+  flex-grow: 1;
+  overflow: auto;
+  background-color: hsl(222, 73%, 46%);
+}
+
+.layout-app-container {
+  flex-grow: 1;
+  max-width: var(--960px);
+  margin-left: auto;
+  margin-right: auto;
+  background-color: hsl(222, 73%, 46%);
+}

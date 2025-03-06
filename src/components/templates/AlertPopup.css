@@ -1,0 +1,86 @@
+.popup-alert-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.popup-alert-bg {
+  background-color: rgba(25, 25, 25, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.popup-alert p,
+.popup-alert-btn {
+  background-color: transparent;
+}
+
+.popup-alert {
+  position: relative;
+  user-select: text;
+  caret-color: transparent;
+  background-color: hsl(191, 32%, 90%);
+  padding: var(--10px);
+  border-radius: 8px;
+  text-align: center;
+  width: var(--336px);
+  height: var(--80px);
+}
+
+.popup-alert p {
+  color: black;
+  font-size: var(--14px);
+}
+
+.popup-alert-btn {
+  margin-top: var(--14px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--14px);
+}
+
+.popup-alert-btn .signin-btn,
+.popup-alert-btn .cancel-btn {
+  color: white;
+  font-size: var(--12px);
+  padding: var(--8px);
+  width: var(--80px);
+  border: none;
+  border-radius: var(--8px);
+}
+
+.popup-alert-btn .signin-btn {
+  background-color: hsl(240, 85%, 41%);
+  cursor: pointer;
+}
+
+.popup-alert-btn .cancel-btn {
+  background-color: hsla(0, 0%, 30%);
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.popup-alert-btn .signin-btn:hover {
+  background-color: hsl(225, 88%, 13%);
+  filter: brightness(1.2);
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.popup-alert-btn .cancel-btn:hover {
+  background-color: hsl(0, 0%, 29%);
+  filter: brightness(1.2);
+  transition: opacity 0.3s ease;
+  opacity: 0.8;
+}

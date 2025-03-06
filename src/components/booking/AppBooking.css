@@ -1,0 +1,7 @@
+.app-booking {
+  padding-top: var(--56px);
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

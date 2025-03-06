@@ -1,0 +1,165 @@
+.signup-content,
+.signin-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.signup-content,
+.signin-content,
+.signup-content h2,
+.signin-content h2,
+.signup-content p,
+.signin-content p,
+.form-container,
+.form-elements,
+.form-container h3,
+.form-container .terms-conditions,
+.form-container .rememberme-conditions,
+.form-container .terms-conditions span,
+.form-container .rememberme-conditions span {
+  background-color: transparent;
+}
+
+.signup-content h2,
+.signin-content h2 {
+  margin-top: var(--24px);
+  text-align: center;
+  font-weight: 600;
+  font-size: var(--32px);
+  letter-spacing: 0.5px;
+}
+
+.signup-content p,
+.signin-content p {
+  margin-top: var(--20px);
+  text-align: center;
+  font-size: var(--14px);
+}
+
+.custom-paragraph {
+  line-height: 1.2;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-top: var(--20px);
+  padding: 0 var(--16px);
+}
+
+.form-container h3 {
+  font-weight: 500;
+  font-size: var(--10px);
+  opacity: 0.8;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container input[type="date"],
+.form-container select {
+  color: white;
+  margin: var(--6px) 0;
+  padding: var(--6px) var(--16px);
+  font-size: var(--10px);
+  border: 2px solid white;
+  border-radius: var(--8px);
+  width: 100%;
+  transition: border-color 0.3s ease;
+  background-color: transparent;
+}
+
+.form-container input:focus {
+  outline: none;
+  color: black;
+  background-color: hsl(191, 32%, 90%);
+  border: 2px solid hsl(228, 99%, 33%);
+  caret-color: black;
+  transition: border-color 0.3s ease;
+}
+
+.form-container .terms-conditions,
+.form-container .rememberme-conditions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: var(--6px);
+  width: 100%;
+  margin-bottom: var(--6px);
+}
+
+.form-container .terms-conditions input[type="checkbox"],
+.form-container .rememberme-conditions input[type="checkbox"] {
+  transform: scale(0.6);
+
+  margin-right: var(--6px);
+  cursor: pointer;
+}
+
+.form-container .terms-conditions span,
+.form-container .rememberme-conditions span {
+  font-size: var(--8px);
+}
+
+.form-container .terms-conditions span a {
+  color: hsla(180, 100%, 50%, 0.7);
+}
+
+.form-container button {
+  margin-top: auto;
+  margin-bottom: var(--4px);
+  padding: var(--10px);
+  background-color: hsl(222, 80%, 35%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: var(--8px);
+  font-size: var(--10px);
+  width: 100%;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: hsl(222, 80%, 31%);
+}
+
+.form-container button:disabled {
+  background-color: hsl(0, 0%, 75%);
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.form-create-message,
+.form-login-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--24px);
+  margin-bottom: var(--6px);
+  background-color: transparent;
+}
+
+.form-create-message .error-message {
+  color: red;
+  font-size: var(--8px);
+  background-color: transparent;
+  padding: var(--4px);
+  text-align: center;
+  border-radius: var(--4px);
+  margin: 0;
+}
+
+.form-create-message .success-message {
+  color: green;
+  font-size: var(--8px);
+  background-color: transparent;
+  padding: var(--4px);
+  text-align: center;
+  border-radius: var(--4px);
+  margin: 0;
+}
+
+@media (min-width: 64em) {
+}

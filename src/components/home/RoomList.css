@@ -1,0 +1,257 @@
+.room-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: var(--12px);
+  gap: var(--16px);
+  user-select: text;
+  caret-color: transparent;
+}
+
+.room-list-no-room {
+  color: white;
+}
+
+h2 {
+  margin-top: var(--24px);
+  font-size: var(--16px);
+  font-weight: 600;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.room-card {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+  min-height: var(--208px);
+  max-height: var(--224px);
+  border: none;
+  border-radius: var(--10px);
+  padding: var(--16px) var(--24px);
+  background-color: hsl(208, 80%, 91%);
+  color: hsl(240, 30%, 3%);
+  position: relative;
+  user-select: text;
+  caret-color: transparent;
+}
+
+#room-name {
+  font-size: var(--16px);
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  background-color: transparent;
+}
+
+#room-description {
+  margin-top: var(--10px);
+  font-size: var(--12px);
+  margin-left: var(--10px);
+  word-wrap: break-word;
+  width: 80%;
+  height: var(--48px);
+  background-color: transparent;
+}
+
+#room-price-word,
+#room-price {
+  font-size: var(--12px);
+  margin-top: var(--4px);
+  margin-left: auto;
+  background-color: transparent;
+}
+
+#room-price {
+  font-size: var(--14px);
+  font-weight: 700;
+  color: hsl(120, 100%, 20%);
+  background-color: transparent;
+}
+
+.room-guests-container {
+  margin-top: var(--10px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--4px);
+  background-color: transparent;
+}
+
+.room-guest-icon {
+  font-size: var(--10px);
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+#room-guests {
+  font-size: var(--10px);
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+.room-booking-btn {
+  margin-top: var(--10px);
+  padding: var(--6px);
+  width: var(--112px);
+  text-align: center;
+  font-size: var(--12px);
+  font-weight: 600;
+  border: none;
+  border-radius: var(--6px);
+  color: white;
+  background-color: hsl(240, 85%, 41%);
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.room-booking-btn:hover {
+  filter: brightness(1.2);
+  transition: opacity 0.3s ease;
+  background-color: hsl(240, 85%, 41%);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: hsl(240, 85%, 41%);
+  width: 80%;
+  margin-top: var(--4px);
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--6px) var(--28px);
+  border: none;
+  border-radius: var(--8px);
+  gap: var(--20px);
+}
+
+.search-bar textarea {
+  resize: none;
+  width: var(--300px);
+  height: var(--20px);
+  font-size: var(--10px);
+  text-align: center;
+  padding: 2px;
+  line-height: var(--16px);
+  border: none;
+  border-radius: var(--4px);
+  caret-color: black;
+  background-color: hsl(208, 80%, 91%);
+}
+
+.price-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--4px);
+  background-color: transparent;
+}
+
+.price-input p {
+  color: hsl(208, 80%, 91%);
+  font-size: var(--14px);
+  background-color: transparent;
+}
+
+.search-bar input {
+  appearance: textfield;
+  font-size: var(--10px);
+  text-align: center;
+  height: var(--20px);
+  text-align: center;
+  padding: 2px;
+  line-height: var(--16px);
+  border: none;
+  border-radius: var(--4px);
+  caret-color: black;
+  background-color: hsl(208, 80%, 91%);
+}
+
+.search-bar textarea:focus,
+.search-bar input:focus {
+  outline: 2px solid black;
+  transition: opacity 0.3s ease;
+}
+
+.search-bar-price {
+  width: var(--88px);
+}
+
+.room-name-container,
+.price-container,
+.guests-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+.room-name-container span,
+.price-container span,
+.guests-container span {
+  color: white;
+  font-size: var(--10px);
+  margin-right: auto;
+  margin-bottom: 2px;
+  background-color: transparent;
+}
+
+.search-bar-guest {
+  width: var(--64px);
+}
+
+.search-bar input::-webkit-outer-spin-button,
+.search-bar input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.search-bar button {
+  height: var(--22px);
+  padding: 2px;
+  width: var(--92px);
+  text-align: center;
+  line-height: var(--16px);
+  font-size: var(--12px);
+  font-weight: 600;
+  border: none;
+  border-radius: var(--4px);
+  cursor: pointer;
+  margin-left: auto;
+  margin-top: auto;
+  background-color: hsl(240, 93%, 23%);
+  color: white;
+}
+
+.search-bar button:hover {
+  filter: brightness(1.2);
+  transition: opacity 0.3s ease;
+  background-color: hsla(240, 93%, 23%, 0.727);
+}
+
+@media (min-width: 50em) and (max-width: 62.5em) {
+  #room-description {
+    word-wrap: break-word;
+    width: 70%;
+  }
+
+  .search-bar textarea {
+    resize: none;
+    width: var(--252px);
+  }
+
+  .search-bar-price {
+    width: var(--72px);
+  }
+
+  .search-bar-guest {
+    width: var(--52px);
+  }
+
+  .search-bar button {
+    width: var(--64px);
+  }
+}

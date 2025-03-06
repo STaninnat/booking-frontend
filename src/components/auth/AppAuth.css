@@ -1,0 +1,179 @@
+.app-auth {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(222, 73%, 46%);
+}
+
+.app-auth-section {
+  flex-grow: 1;
+  display: flex;
+  user-select: text;
+  caret-color: transparent;
+}
+
+.app-auth-left {
+  flex: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-auth-right {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: auto;
+}
+
+.app-auth-logo {
+  height: 40%;
+  max-height: var(--252px);
+  width: auto;
+  background-color: transparent;
+  filter: drop-shadow(var(--6px) var(--6px) var(--6px) black);
+}
+
+.app-auth-right-container {
+  color: hsl(191, 32%, 90%);
+  background-color: hsl(222, 75%, 46%);
+  padding: var(--10px) var(--24px);
+  border: none;
+  border-radius: var(--4px);
+  box-shadow: 5px 5px 5px hsl(0, 0%, 0%);
+  height: auto;
+  max-width: var(--432);
+  min-width: var(--424px);
+  min-height: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: var(--8px);
+}
+
+.app-auth-right-container h1,
+.app-auth-right-container h3 {
+  background-color: transparent;
+}
+
+.app-auth-right-container h1 {
+  font-weight: 800;
+  font-size: var(--32px);
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.app-auth-right-container h3 {
+  font-size: var(--16px);
+  margin-top: var(--28px);
+}
+
+.app-auth-right-container span {
+  width: 100%;
+  font-size: var(--8px);
+  margin-top: var(--6px);
+}
+
+.app-auth-right-container span a {
+  color: hsl(222, 80%, 20%);
+}
+
+.app-auth-right-container button {
+  color: hsl(191, 32%, 90%);
+  padding: var(--8px);
+  width: var(--208px);
+  align-self: flex-start;
+  border-radius: var(--24px);
+  text-align: center;
+  font-weight: 500;
+  font-size: var(--12px);
+  margin-top: var(--16px);
+  transition: transform 0.6s ease;
+  cursor: pointer;
+}
+
+#app-auth-right-signup-btn {
+  background-color: hsl(222, 80%, 35%);
+  border: var(--4px) solid hsl(222, 80%, 35%);
+}
+
+#app-auth-right-signup-btn:hover {
+  background-color: hsl(222, 80%, 30%);
+  border: var(--4px) solid hsl(222, 80%, 30%);
+}
+
+#app-auth-right-signin-btn {
+  background-color: hsl(222, 73%, 46%);
+  border: var(--4px) solid hsl(191, 32%, 90%);
+}
+
+#app-auth-right-signin-btn:hover {
+  background-color: hsl(222, 80%, 35%, 0.6);
+}
+
+.app-auth-footer {
+  padding: 0 0 var(--6px) 0;
+  font-size: var(--8px);
+  display: flex;
+  justify-content: center;
+  gap: var(--28px);
+  background-color: transparent;
+}
+
+.app-auth-footer a {
+  color: hsl(191, 32%, 90%);
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 50em) and (max-width: 62.5em) {
+  .app-auth-logo {
+    height: 40%;
+    max-height: var(--208px);
+    width: auto;
+  }
+
+  .app-auth-right-container {
+    padding: var(--10px) var(--24px);
+    border: none;
+    height: auto;
+    max-width: var(--336px);
+    min-width: var(--330px);
+    min-height: auto;
+  }
+
+  .app-auth-right-container h1 {
+    font-weight: 700;
+    font-size: var(--24px);
+  }
+
+  .app-auth-right-container h3 {
+    font-size: var(--12px);
+    margin-top: var(--20px);
+  }
+
+  .app-auth-right-container span {
+    width: 100%;
+    font-size: var(--8px);
+    margin-top: var(--4px);
+  }
+
+  .app-auth-right-container button {
+    padding: var(--8px);
+    width: var(--176px);
+    align-self: flex-start;
+    border-radius: var(--24px);
+    text-align: center;
+    font-weight: 500;
+    font-size: var(--10px);
+    margin-top: var(--14px);
+  }
+}

@@ -1,0 +1,139 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: var(--20px);
+  height: var(--56px);
+  width: 100%;
+  background-color: hsl(240, 85%, 41%);
+  box-shadow: 0 1px 10px hsla(232, 91%, 31%, 0.8);
+  user-select: text;
+  caret-color: transparent;
+  z-index: 1000;
+  transition: background-color 0.4s ease-in-out;
+}
+
+nav.scrolled {
+  height: var(--48px);
+  padding: var(--10px);
+  background-color: hsla(240, 85%, 41%, 0.7);
+  backdrop-filter: blur(10px);
+  transition: background-color 0.4s ease-in-out;
+}
+
+nav.scrolled .app-header-logo {
+  height: var(--40px);
+}
+
+nav.scrolled .header-home-container {
+  transition: all 0.4s ease-in-out;
+  gap: var(--32px);
+}
+
+nav i {
+  font-size: var(--16px);
+  color: hsl(208, 80%, 91%);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav.scrolled i {
+  font-size: var(--14px);
+}
+
+.app-header-logo {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  left: var(--48px);
+  height: var(--48px);
+  width: auto;
+}
+
+.header-home-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  background-color: transparent;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: var(--48px);
+}
+
+.header-home-icon {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: var(--4px);
+  cursor: pointer;
+  padding: var(--6px) var(--10px);
+  transition: opacity 0.3s ease;
+  background-color: transparent;
+}
+
+.header-home-icon:hover {
+  filter: brightness(1.2);
+  transition: opacity 0.3s ease;
+  background-color: hsla(240, 96%, 40%, 0.553);
+  border-radius: var(--16px);
+  opacity: 0.8;
+}
+
+.header-home-icon h3 {
+  font-size: var(--14px);
+  background-color: transparent;
+}
+
+nav.scrolled .header-home-icon h3 {
+  font-size: var(--10px);
+}
+
+.header-home-user-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  right: var(--24px);
+}
+
+.header-home-user,
+.header-home-logout {
+  font-size: var(--24px);
+  cursor: pointer;
+}
+
+nav.scrolled .header-home-user,
+nav.scrolled .header-home-logout {
+  font-size: var(--20px);
+}
+
+.header-home-user:hover,
+.header-home-logout:hover {
+  filter: brightness(1.2);
+  transition: opacity 0.3s ease;
+}
+
+@media (min-width: 50em) and (max-width: 62.5em) {
+  nav i {
+    font-size: var(--12px);
+  }
+
+  .app-header-logo {
+    left: var(--40px);
+    height: var(--40px);
+    width: auto;
+  }
+
+  .header-home-icon h3 {
+    font-size: var(--12px);
+    background-color: transparent;
+  }
+
+  .header-home-user,
+  .header-home-logout {
+    font-size: var(--20px);
+  }
+}

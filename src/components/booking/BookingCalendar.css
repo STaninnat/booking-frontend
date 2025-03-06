@@ -1,0 +1,35 @@
+.booked {
+  background-color: rgb(175, 36, 36) !important;
+  color: white;
+  cursor: not-allowed;
+}
+
+.react-calendar {
+  background-color: rgb(41, 25, 132);
+  border: none;
+  border-radius: var(--10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: var(--10px);
+  width: var(--500px);
+  height: var(--500px);
+  margin: 0 auto;
+}
+
+.react-calendar__tile {
+  padding: var(--24px);
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.react-calendar__tile--active {
+  background-color: hsl(122, 39%, 49%);
+  color: white;
+}
+
+.react-calendar__tile--now {
+  background-color: hsl(54, 100%, 62%);
+  color: black;
+  font-weight: bold;
+}

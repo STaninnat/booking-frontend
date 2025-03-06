@@ -1,12 +1,45 @@
-# React + Vite
+# booking-fe-react
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend for the booking system, providing the user interface and interacting with the backend API.
 
-Currently, two official plugins are available:
+The first page displays the available rooms, allowing users to view a preview of the rooms before making any decisions. However, users cannot take any further action unless they sign up or sign in. Once logged in, users will be able to select and book rooms.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation and Tools Used
 
-## Expanding the ESLint configuration
+- Vite React: A fast build tool for developing the frontend.
+- js-cookie: A simple JavaScript API for handling cookies.
+- react: A JavaScript library for building user interfaces.
+- react-calendar: A flexible and customizable calendar component for React.
+- react-dom: Provides DOM-specific methods for React.
+- react-router-dom: A library for handling routing in React applications.
+- react-slick: A React wrapper for the Slick carousel.
+- slick-carousel: A popular carousel library with touch support.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Local Development
+
+Clone the repository
+
+```bash
+git clone https://github.com/STaninnat/booking-frontend
+cd booking-frontend
+```
+
+Run .sh file, but if it doesn't work, make sure to run chmod +x first.
+
+```bash
+chmod +x ./scripts/setup.sh
+./scripts/setup.sh
+```
+
+Run the server:
+
+```bash
+./scripts/run_project.sh
+***or***
+npm run preview
+***Once the server is running, you can press o + Enter to open the browser, and press q + Enter to stop the server.***
+```
+
+## Notes
+
+- Before running the frontend, don't forget to run the backend first. Thank you.
