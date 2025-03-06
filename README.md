@@ -37,7 +37,7 @@ Run the server:
 ./scripts/run_project.sh
 ```
 
-### or
+or
 
 ```bash
 npm run preview
