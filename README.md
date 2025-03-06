@@ -35,10 +35,15 @@ Run the server:
 
 ```bash
 ./scripts/run_project.sh
-*or*
-npm run preview
-*Once the server is running, you can press o + Enter to open the browser, and press q + Enter to stop the server.*
 ```
+
+### or
+
+```bash
+npm run preview
+```
+
+_Once the server is running, you can press o + Enter to open the browser, and press q + Enter to stop the server._
 
 ## Notes
 
