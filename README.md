@@ -24,6 +24,12 @@ git clone https://github.com/STaninnat/booking-frontend
 cd booking-frontend
 ```
 
+Configure environment variables. Copy the .env.example file to .env and fill in the values. You'll need to update values in the .env file to match your configuration.
+
+```bash
+cp .env.example .env
+```
+
 Run .sh file, but if it doesn't work, make sure to run chmod +x first.
 
 ```bash
